@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "rainalert-app"
+version = "0.1.0"
+description = "Weather alert system that checks multiple cities and sends email if rain/snow probability exceeds thresholds."
+authors = ["kirank6 <khanalkiran2007@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "rainalert_app" }]
+
+[tool.poetry.scripts]
+weather-alert = "rainalert_app.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.0"
+python-dotenv = "^1.0.1"
+
+# Core
+streamlit = "^1.38.0"
+langchain = "^0.2.15"
+langchain-community = "^0.2.15"
+
+# LLM backends
+openai = "^1.43.0"
+ollama = "^0.1.8"
+
+# Vector DBs
+faiss-cpu = "^1.8.0"
+chromadb = "^0.5.5"
+
+# Utils
+pandas = "^2.2.2"
+duckduckgo-search = "^6.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

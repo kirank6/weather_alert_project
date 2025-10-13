@@ -1,0 +1,47 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.ipynb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# --- Poetry ---
+# Virtual environment (if created inside project)
+.venv/
+
+# Poetry lock file backups
+poetry.lock.*
+
+# --- Environment / Jupyter ---
+.env
+.env.*
+.venv/
+.ipynb_checkpoints
+*.sqlite3
+
+# --- Logs & Temp ---
+*.log
+*.out
+*.err
+*.tmp
+*.swp
+*.swo
+
+# --- VSCode ---
+.vscode/
+*.code-workspace
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Streamlit ---
+.streamlit/secrets.toml

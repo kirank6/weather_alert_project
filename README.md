@@ -1,2 +1,2 @@
 # weather_alert_project
-To get rain and snow alter if there is high probability in given locations. 
+To get rain and snow alert if there is high probability in given locations. 

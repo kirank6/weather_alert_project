@@ -2,10 +2,10 @@ from datetime import time
 
 # --- Define locations ---
 locations = [
-      {"name": "Napervillem", "lat": 41.779533, "lon": -88.146133},
-      {"name": "Napervillec", "lat": 41.767281, "lon": -88.155243},
-      {"name": "Napervilleh", "lat": 41.743500, "lon": -88.097485},
-      {"name": "Chicago", "lat": 41.878679, "lon": -87.640132},
+      {"name": "Naperville Metra", "lat": 41.779533, "lon": -88.146133},
+      {"name": "Naperville Downtown", "lat": 41.767281, "lon": -88.155243},
+      {"name": "Naperville East", "lat": 41.743500, "lon": -88.097485},
+      {"name": "Chicago Union Station", "lat": 41.878679, "lon": -87.640132},
       {"name": "Mokena", "lat": 41.544891, "lon": -87.853366},
 ]
 
@@ -37,5 +37,5 @@ timewmo = [
 ]
 
 # --- Define thresholds ---
-rain_threshold = 4
+rain_threshold = 40
 snow_threshold = 0.4  

@@ -20,13 +20,13 @@ def main():
         df = get_weather_data(loc["lat"], loc["lon"], loc["name"])
         
         #time based on location
-        if loc["name"] == "Napervillem":
+        if loc["name"] == "Naperville Metra":
             time_windows = timewm
-        elif loc["name"] == "Napervillec":
+        elif loc["name"] == "Naperville Downtown":
             time_windows = timewc
-        elif loc["name"] == "Napervilleh":
+        elif loc["name"] == "Naperville East":
             time_windows = timewh
-        elif loc["name"] == "Chicago":
+        elif loc["name"] == "Chicago Union Station":
             time_windows = timewca
         elif loc["name"] == "Mokena":
             time_windows = timewmo
@@ -49,7 +49,7 @@ def main():
             #st.dataframe(combined)
             all_alerts.append(combined)
         else:
-            st.success(f"No Worries about Rain/Snow 🌧️ ❄️ Today {loc['name']}.")
+            st.success(f"No Worries about Rain/Snow 🌧️ ❄️ Today At {loc['name']}.")
 
     if all_alerts:
         final_df = pd.concat(all_alerts)

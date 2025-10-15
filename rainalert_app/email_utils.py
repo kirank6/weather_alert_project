@@ -1,8 +1,15 @@
 import os
 import smtplib
+import schedule
+import time as t
+import pandas as pd
+from datetime import datetime, time as dtime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
+import requests
+
+# ---------------- Load Environment Variables ---------------- #
 
 load_dotenv()
 
@@ -34,3 +41,5 @@ def send_email_alert(results_df):
         print("📧 Email alert sent successfully.")
     except Exception as e:
         print(f"❌ Failed to send email: {e}")
+        
+

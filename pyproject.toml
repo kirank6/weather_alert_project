@@ -30,6 +30,7 @@ chromadb = "^0.5.5"
 # Utils
 pandas = "^2.2.2"
 duckduckgo-search = "^6.1.0"
+schedule = "^1.2.2"
 
 
 [build-system]

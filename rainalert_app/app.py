@@ -51,13 +51,13 @@ def main():
         else:
             st.success(f"No Worries about Rain/Snow 🌧️ ❄️ Today At {loc['name']}.")
 
-    if all_alerts:
-        final_df = pd.concat(all_alerts)
-        st.download_button("📥 Download Alerts CSV", final_df.to_csv(index=False), file_name="alerts.csv")
-        if st.button("📧 Send Email Alerts"):
-            send_email_alert(final_df)
-    else:
-        st.info("No alerts found across all locations.")
+    # if all_alerts:
+    #     final_df = pd.concat(all_alerts)
+    #     st.download_button("📥 Download Alerts CSV", final_df.to_csv(index=False), file_name="alerts.csv")
+    #     if st.button("📧 Send Email Alerts"):
+    #         send_email_alert(final_df)
+    # else:
+    #     st.info("No alerts found across all locations.")
 
 if __name__ == "__main__":
     main()

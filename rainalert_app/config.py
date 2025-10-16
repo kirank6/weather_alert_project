@@ -20,7 +20,8 @@ timewca = [
     (time(17, 30), time(18, 0)), 
 ]
 timewh = [
-    (time(6, 30), time(7, 0)),      
+    (time(6, 30), time(7, 0)),
+    (time(8, 20), time(9, 0)),      
     (time(15, 30), time(16, 0)), 
 ]
 timewm = [
@@ -28,7 +29,8 @@ timewm = [
     (time(18, 30), time(19, 0)), 
 ]
 timewc = [
-    (time(6, 30), time(7, 0)),      
+    (time(6, 30), time(7, 0)),  
+    (time(8, 20), time(9, 0)),    
     (time(15, 30), time(16, 0)), 
 ]
 timewmo = [
